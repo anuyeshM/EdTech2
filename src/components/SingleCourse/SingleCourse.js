@@ -81,7 +81,7 @@ const SingleCourse = () => {
                     
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
              
-                <button className='btn1 btn-primary px-5 py-3 mb-40  center'id='play'onClick={payLink}>Buy Now</button>
+                <button className='btn1 btn-primary px-5 py-3 mb-40  center'id='play'onClick={()=>window.location.href={payLink}}>Buy Now</button>
                 </div>
                 </div>
                 
