@@ -21,7 +21,7 @@ const onPlayerReady  = (event) => {
 }
 const opts = {
   height: '420',
-  width: '600',
+  width: '400',
   playerVars: {
     // https://developers.google.com/youtube/player_parameters
     autoplay: 0,
@@ -38,7 +38,7 @@ const SingleCourse = () => {
     // match url id and fakedb courses object to render UI
     const findMatch = courses.find(single => parseInt(id) === single.id);
     // destruture match course
-    const { videoId, institute, title, rating, totalRate, lebel, price, description, review1, review2, review3, review4, uname1, uname2, uname3, uname4, uimg1, uimg2, uimg3, uimg4} = findMatch;
+    const { videoId, institute, title, rating, totalRate, lebel, price, description,payLink, review1, review2, review3, review4, uname1, uname2, uname3, uname4, uimg1, uimg2, uimg3, uimg4} = findMatch;
     
     return (
         <>
@@ -81,7 +81,7 @@ const SingleCourse = () => {
                     
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
              
-                <button className='btn1 btn-primary px-5 py-3 mb-40  center'id='play'onClick={()=>window.location.href=`https://wa.me/message/3E3YLZJCHBDNP1?text=I'm${title}interestedincourse`}>Buy Now</button>
+                <button className='btn1 btn-primary px-5 py-3 mb-40  center'id='play'onClick={payLink}>Buy Now</button>
                 </div>
                 </div>
                 
