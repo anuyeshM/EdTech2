@@ -21,7 +21,7 @@ const onPlayerReady  = (event) => {
 }
 const opts = {
   height: '420',
-  width: '400',
+  width: '520',
   playerVars: {
     // https://developers.google.com/youtube/player_parameters
     autoplay: 0,
@@ -30,7 +30,7 @@ const opts = {
 
 
 
-const SingleCourse = () => {
+var SingleCourse = () => {
     //context data 
     const courses = useContext(singleContext)
     //for collect url dynamic param value
@@ -43,12 +43,12 @@ const SingleCourse = () => {
     return (
         <>
 
-        <section className='container my-lg-5'>
+        <section className='container my-lg-10'>
         <div className='row'>
             {/* banner left part text */}
 
-            <div className="col-md-6 text-center pe-40 t-20;">
-            <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <div className="col-md-6 text-center pe-1 t-10;">
+            <div class="shadow-lg p-3 mb-5 mx-0 bg-white rounded">
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginBottom:"20px",marginTop:"20px",  border: "2px solid red" }}> 
             <YouTube videoId={videoId} opts={opts} onReady={onPlayerReady} />
             </div>
@@ -68,8 +68,8 @@ const SingleCourse = () => {
       
  
 
-            <div className="col-md-6 d-flex align-items-center ">
-                <div class="shadow-lg p-3 mb-5 bg-white rounded m-20">
+            <div className="col-md-6 d-flex align-items-center text-center ">
+                <div class="shadow-lg p-3 mb-1 mx-5 bg-white rounded m-20 align-items-center text-center">
                 
                 <h1 className='text-decoration-underline background-red text-center'>{title}</h1>
                 <h6 className="text-center">Offer by: {institute}</h6>
@@ -81,7 +81,7 @@ const SingleCourse = () => {
                     
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
              
-                <a style={{background: '#99e6ff', color:'buttontext',width:'100px', height: '40px',padding:'7px 7px 7px',margin: '10px 10px 10px 10px',font:'400 18px system-ui'}} href={payLink}>Buy Now</a>
+                <a style={{background: '#99e6ff', color:'buttontext',width:'100px',color:'black', height: '40px',padding:'7px 7px 7px',margin: '10px 10px 10px 10px',font:'400 18px system-ui'}} href={payLink}>Buy Now</a>
                 </div>
                 </div>
                 
@@ -99,7 +99,7 @@ const SingleCourse = () => {
     </section>
     <div className="row">
             <div className="col-lg-12 mb-1">  
-    <div class="shadow-lg p-3 mb-5 bg-white rounded m-10">
+    <div class="shadow-lg p-3 mb-5 mx-5 bg-white rounded m-10">
     <div style={{ display: "flex", justifyContent: "space-evenly", alignItems: "center", marginBottom:"10px",marginTop:"10px"}}>
     
     <CardGroup>
