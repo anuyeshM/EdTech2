@@ -11,6 +11,7 @@ import StarRatings from 'react-star-ratings';
 import img from "../../Images/certificate (1).png";
 import img1 from "../../Images/video.png";
 import img2 from '../../Images/folder.png';
+import ReactWhatsapp from '../../../node_modules/react-whatsapp';
 
 
 
@@ -52,7 +53,7 @@ var SingleCourse = () => {
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginBottom:"20px",marginTop:"20px",  border: "2px solid red" }}> 
             <YouTube videoId={videoId} opts={opts} onReady={onPlayerReady} />
             </div>
-            
+            <ReactWhatsapp number="+918260255206" message="Hi I want for info about your course !"><button className='btn btn-primary px-5 py-3 me-2'>For course details chat with our team</button></ReactWhatsapp>
             </div>
            
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginBottom:"20px"}}>  
@@ -82,6 +83,8 @@ var SingleCourse = () => {
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
              
                 <a style={{background: '#99e6ff', color:'buttontext',width:'100px',color:'black', height: '40px',padding:'7px 7px 7px',margin: '10px 10px 10px 10px',font:'400 18px system-ui'}} href={payLink}>Buy Now</a>
+                
+                
                 </div>
                 </div>
                 
